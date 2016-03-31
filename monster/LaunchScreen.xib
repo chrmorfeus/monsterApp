@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecrafter_3.ttf">
+            <string>MineCrafter-3</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="aww-Ha-O9J">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your Character" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlO-zQ-57w">
+                    <rect key="frame" x="208" y="8" width="184" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="184" id="Kcz-xD-B0h"/>
+                        <constraint firstAttribute="height" constant="21" id="avW-nt-EXX"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="fjO-Hk-x7x"/>
+                        <constraint firstAttribute="width" constant="184" id="uee-Fg-qRy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MineCrafter-3" family="MineCrafter 3" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-Ei-jFn">
+                    <rect key="frame" x="250" y="114" width="100" height="220"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="486-a1-PvR">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="QRS-87-OP8"/>
+                                <constraint firstAttribute="height" constant="100" id="cQc-jF-IuR"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="idle1"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fB-9J-lSF">
+                            <rect key="frame" x="0.0" y="120" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="Ayt-RY-4zd"/>
+                                <constraint firstAttribute="width" constant="100" id="YcZ-n6-ofH"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="pink_idle (1)"/>
+                            <variation key="heightClass=compact" misplaced="YES">
+                                <rect key="frame" x="120" y="0.0" width="100" height="100"/>
+                            </variation>
+                        </button>
+                    </subviews>
+                    <variation key="heightClass=compact" axis="horizontal" misplaced="YES">
+                        <rect key="frame" x="250" y="90" width="220" height="100"/>
+                    </variation>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YlO-zQ-57w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Ww-7a-V7A"/>
+                <constraint firstItem="aww-Ha-O9J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1wG-EL-nWH"/>
+                <constraint firstItem="YlO-zQ-57w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="5pC-qQ-a0k"/>
+                <constraint firstItem="Oc0-Ei-jFn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LZG-bF-iXe"/>
+                <constraint firstItem="aww-Ha-O9J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qg8-0s-WWm"/>
+                <constraint firstItem="Oc0-Ei-jFn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rut-8z-KNU"/>
+                <constraint firstAttribute="trailing" secondItem="aww-Ha-O9J" secondAttribute="trailing" id="h9l-p3-a6A"/>
+                <constraint firstAttribute="bottom" secondItem="aww-Ha-O9J" secondAttribute="bottom" id="srQ-2i-4As"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="768" height="1024"/>
+        <image name="idle1" width="889" height="615"/>
+        <image name="pink_idle (1)" width="239" height="159"/>
+    </resources>
+</document>
